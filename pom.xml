@@ -1,15 +1,17 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.rkc.zds</groupId>
-  <artifactId>mongodb-server</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.rkc.zds</groupId>
+	<artifactId>mongodb-server</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.0.RELEASE</version>
 	</parent>
-	
+
 	<dependencies>
 
 		<!-- web -->
@@ -40,7 +42,7 @@
 			<groupId>org.apache.derby</groupId>
 			<artifactId>derby</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.querydsl</groupId>
 			<artifactId>querydsl-mongodb</artifactId>
@@ -57,22 +59,16 @@
 			<artifactId>querydsl-apt</artifactId>
 			<version>${querydsl.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.github.rutledgepaulv</groupId>
 			<artifactId>rest-query-engine</artifactId>
 			<version>0.7.1</version>
 		</dependency>
 
-		<!-- security 
+		<!-- security <dependency> <groupId>org.springframework.boot</groupId> 
+			<artifactId>spring-boot-starter-security</artifactId> </dependency> -->
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		
-		-->
-		
 		<!-- EMail Dependency -->
 		<dependency>
 			<groupId>javax.mail</groupId>
@@ -80,8 +76,44 @@
 			<version>1.4</version>
 		</dependency>
 
+		<!-- test -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-junit-jupiter</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.platform</groupId>
+			<artifactId>junit-platform-runner</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.vintage</groupId>
+			<artifactId>junit-vintage-engine</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>

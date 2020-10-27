@@ -36,5 +36,15 @@ class ContactControllerTest {
 		.andExpect(MockMvcResultMatchers.jsonPath("content").exists());
 
 	}
+	
+	@Test
+	public void getOneContactAPI() throws Exception {
+		String id = "8";
+		mvc.perform(MockMvcRequestBuilders.get("/api/contact/{id}",id).accept(MediaType.APPLICATION_JSON))
+		.andDo(MockMvcResultHandlers.print())
+		.andExpect(status().isOk())
+		.andExpect(MockMvcResultMatchers.jsonPath("id").exists());
+
+	}
 
 }

@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Wed Oct 28 12:20:59 EDT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0175-7003-311c-000013efae48 
+on database directory memory:/home/rcampion/git/mongodb-server/2a4aa5e7-5259-4a76-87cc-867a9ec96f6f with class loader sun.misc.Launcher$AppClassLoader@4e0e2f2a 
+Loaded from file:/home/rcampion/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_241-b07
+user.dir=/home/rcampion/git/mongodb-server
+os.name=Linux
+os.arch=amd64
+os.version=5.4.0-52-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Oct 28 12:23:23 EDT 2020:
+Shutting down instance a816c00e-0175-7003-311c-000013efae48 on database directory memory:/home/rcampion/git/mongodb-server/2a4aa5e7-5259-4a76-87cc-867a9ec96f6f with class loader sun.misc.Launcher$AppClassLoader@4e0e2f2a 
